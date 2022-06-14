@@ -1,11 +1,10 @@
 class Flower:
     def __init__(self,name = None,color = None,num = None):
-        self.name = name
-        self.color = color
-        self.num_of_petal = num
+#         self.name = name
+#         self.color = color
+#         self.num_of_petal = num
+          pass
         
-# Or can be created an empty class and  the code would still run
-
 
 
 flower1 = Flower()
