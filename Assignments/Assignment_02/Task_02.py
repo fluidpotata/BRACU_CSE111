@@ -24,8 +24,8 @@ print("Color of this flower:",flower2.color)
 print ("Number of petal:",flower2. num_of_petal)
 
 
-print(flower1)
-print(flower2)
+print(hex(id(flower1)))
+print(hex(id(flower2)))
 if flower1 == flower2:
     print("They are the same")
 else:
