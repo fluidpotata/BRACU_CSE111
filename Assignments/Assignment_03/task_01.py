@@ -1,9 +1,10 @@
 class Calculator:
-    print("Let's calculate")
+    
     def __init__(self,oper,val1,val2):
         self.operator = oper
         self.value1 = val1
         self.value2 = val2
+        print("Let's calculate")
 
     def add(self):
         return(f"Result: {self.value1+self.value2}")
