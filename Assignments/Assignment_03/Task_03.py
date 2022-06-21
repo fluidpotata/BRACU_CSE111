@@ -9,11 +9,9 @@ class Patient:
     def printDetails(self):
         print(f"Name : {self.name}")
         print(f"Age : {self.age}")
-        print(f"Weight : {self.weight}")
-        print(f"Height : {self.height}")
+        print(f"Weight : {self.weight} kg")
+        print(f"Height : {self.height} cm")
         print(f"BMI : {self.weight / ((self.height/100)**2)}")
-
-        
 #===================================
 
 p1 = Patient("A", 55, 63.0, 158.0)
