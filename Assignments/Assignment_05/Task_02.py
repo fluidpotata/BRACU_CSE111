@@ -5,7 +5,7 @@ class Teacher:
         self.__courses = []
 
     def addCourse(self,crs):
-        self.__courses.append(crs)
+        self.__courses.append(crs.name)
 
     def printDetail(self):
         print("====================================")
@@ -19,8 +19,8 @@ class Course:
     def __init__(self,name):
         self.name = name
 
-    def __repr__(self):
-        return self.name
+    # def __repr__(self):
+    #     return self.name
 
 
 # Write your code here for subtasks 1-4
