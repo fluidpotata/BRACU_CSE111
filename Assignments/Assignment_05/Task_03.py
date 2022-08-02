@@ -7,7 +7,7 @@ class Team:
         self.__name = n
 
     def addPlayer(self,obj):
-        self.__players.append(obj)
+        self.__players.append(obj.name)
 
     def printDetail(self):
         print('=====================')
@@ -19,8 +19,8 @@ class Team:
 class Player:
     def __init__(self,n):
         self.name = n
-    def __repr__(self):
-        return self.name
+    # def __repr__(self):
+    #     return self.name
 
 # Write your code here for subtasks 1-4
 
