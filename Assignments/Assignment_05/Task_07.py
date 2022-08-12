@@ -4,7 +4,10 @@ class Dolls:
         self.price = p
 
     def detail(self):
-        return f"Doll: {self.name} \nTotal Price: {self.price} taka"
+        if len(self.name.split(" "))>2:
+            return f"Dolls: {self.name} \nTotal Price: {self.price} taka"
+        else:
+            return f"Doll: {self.name} \nTotal Price: {self.price} taka"
 
     def __gt__(self, other):
         return self.price > other.price
