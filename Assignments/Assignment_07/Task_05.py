@@ -9,16 +9,18 @@ class Animal:
 class Printer:
     def printSound(self, a):
         print(a.makeSound())
+#=====================================================
 
 class Dog(Animal):
-    def __init__(self,sound):
+    def __init__(self, sound):
         super().__init__(sound)
-        
+
 
 class Cat(Animal):
-    def __init__(self,sound):
+    def __init__(self, sound):
         super().__init__(sound)
 
+#======================================================
 # write your code here
 
 d1 = Dog('bark')

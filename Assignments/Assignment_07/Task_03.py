@@ -5,25 +5,24 @@ class Tournament:
         self.__name = name
     def get_name(self):
         return self.__name
-
+#=============================================================
 class Cricket_Tournament(Tournament):
     def __init__(self,name='Default',team=0,type="No Type"):
-        self.__name = name
-        self.__team = team
-        self.__type = type
+        self.name = name
+        self.team = team
+        self.type = type
 
     def detail(self):
-        return f"Cricket Tournament Name: {self.__name}\nNumber of Teams: {self.__team}\nType: {self.__type}"
+        return f"Cricket Tournament Name: {self.name}\nNumber of Teams: {self.team}\nType: {self.type}"
 
 class Tennis_Tournament(Tournament):
     def __init__(self,name,players):
-        self.__name = name
-        self.__players = players
+        self.name = name
+        self.players = players
 
     def detail(self):
-        return f"Tennis Tournament Name: {self.__name}\nNumber of Players: {self.__players}"
-
-
+        return f"Tennis Tournament Name: {self.name}\nNumber of Players: {self.players}"
+#===========================================================================
 #write your code here
 
 ct1 = Cricket_Tournament()

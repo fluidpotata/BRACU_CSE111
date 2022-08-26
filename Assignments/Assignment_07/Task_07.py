@@ -1,5 +1,4 @@
 class Football:
-
   def __init__(self, team_name, name, role):
     self.__team = team_name
     self.__name = name
@@ -23,7 +22,16 @@ class Player(Football):
 
 
   def print_details(self):
-    print(f"{super().get_name_team()}\nTeam role = {self.role} \n")
+    print(f"{super().get_name_team()}\nTeam role : {self.role} \nGoal Ratio: {self.ratio}\nMatch Earning: {self.earning_per_match}K")
+
+class Manager(Football):
+  def __init__(self, team_name, name, role, win):
+    super().__init__(team_name, name, role)
+    self.win = win
+    self.salary = win*1000
+
+  def print_details(self):
+    print(f"{super().get_name_team()}\nTeam role : {self.role} \nTotal Win: {self.win}\nMatch earning: {self.salary}k")
 
 
 player_one = Player('Juventus', 'Ronaldo', 'Striker', 25, 32)

@@ -13,9 +13,11 @@ class Book(Product):
         self.__isbn = isbn
         self.__publisher = pub
 
+    def get_isbn_publisher(self):
+        return f" ISBN: {self.__isbn} Publisher: {self.__publisher}"
     def printDetail(self):
-        temp = super().get_id_title_price() + f" ISBN: {self.__isbn} Publisher: {self.__publisher}"
-        return temp
+        # temp = super().get_id_title_price() + self.get_isbn_publisher()
+        return super().get_id_title_price() + self.get_isbn_publisher()
 
 class CD(Product):
     def __init__(self,id,tit,pr,band,dur,gen):
@@ -24,15 +26,18 @@ class CD(Product):
         self.__genre = gen
         self.__band = band
 
+    def get_band_genre_duration(self):
+        return f" Band: {self.__band} Duration: {self.__duration} minutes Genre: {self.__genre}"
+
 
     def printDetail(self):
-        tmp = super().get_id_title_price() +f" Band: {self.__band} Duration: {self.__duration} minutes Genre: {self.__genre}"
+        tmp = super().get_id_title_price() + self.get_band_genre_duration()
         return tmp
 
 
 
 
-
+#=======================================================================================================================
 book = Book(1,"The Alchemist",500,"97806","HarperCollins")
 print(book.printDetail())
 print("-----------------------")
