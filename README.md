@@ -1,2 +1,2 @@
-# CSE111-Assignments
-Don't copy the codes, Try to understand how the logic is build up
+# CSE111
+## Summer 2022
